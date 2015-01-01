@@ -1,16 +1,28 @@
+---
+layout: null
+---
+
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Adam Esterline]]></title>
-  <link href="http://aesterline.github.io/atom.xml" rel="self"/>
-  <link href="http://aesterline.github.io/"/>
-  <updated>2014-02-02T18:56:57-07:00</updated>
-  <id>http://aesterline.github.io/</id>
-  <author>
-    <name><![CDATA[Adam Esterline]]></name>
-    
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+ <title>{{ site.title }}</title>
+ <link href="{{ site.url }}{{ site.baseurl }}atom.xml" rel="self"/>
+ <link href="{{ site.url }}{{ site.baseurl }}"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>{{ site.url }}</id>
+ <author>
+   <name>{{ site.author.name }}</name>
+   <email>{{ site.author.email }}</email>
+ </author>
 
-  
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>{{ site.url }}{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+
 </feed>

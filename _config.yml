@@ -1,0 +1,19 @@
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Adam Esterline
+tagline:          a twisted journey through my mind
+url:              http://adamesterline.com
+paginate:         1
+baseurl:          /
+author:
+  name:           Adam Esterline
+  url:            https://twitter.com/adamesterline
+  email:          adam@esterlines.com
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/poole/poole
