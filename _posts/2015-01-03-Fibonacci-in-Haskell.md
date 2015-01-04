@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Fibonacci Sequence in Haskell
+category: haskell
 ---
 
 I have finished the first 5 chapters in ["Learn You a Haskell for Great Good!"](http://learnyouahaskell.com/). I enjoy learning Haskell. Let's look at a couple of implementations of the [Fibonacci sequence](http://en.wikipedia.org/wiki/Fibonacci_number) in Haskell.
