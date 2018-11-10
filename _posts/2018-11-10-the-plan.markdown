@@ -3,12 +3,15 @@ layout: post
 title:  "The Plan"
 tags: [fp, categorytheory]
 date:   2018-11-10 06:14:00 -0700
+excerpt_separator: <!--more-->
 ---
 What is my plan for becoming a better functional programmer? Good question. I need to have a mix of
 theory and practice. I am collecting books, videos, classes, and articles to help me on my journey.
 I am currently working in Scala day to day, so most of my practice will be in Scala. I'll host my
 practice exercises on my [GitHub](http://github.com/aesterline) account. If you have suggestions for
 other resources, I could use, please let me know.
+
+<!--more-->
 
 Books
 
